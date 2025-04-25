@@ -4,4 +4,4 @@
 
 [Link al PDF](https://github.com/tuesta/tema17-rss/blob/main/TuestaAscoyVictor_Tema17_RSS.pdf)
 
-[![RSS](https://github.com/tuesta/tema17-rss/blob/main/rss.gif)]
+![RSS](https://github.com/tuesta/tema17-rss/blob/main/rss.gif)
