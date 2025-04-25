@@ -1,0 +1,112 @@
+<style>
+    *
+    {
+        box-sizing:border-box;
+    }        
+    form
+    {
+        max-width: 600px;/*Ancho del formulario*/
+        margin: 0 auto; /* Centra el formulario en la página */
+        padding: 20px;/*Espacio entre los campos de entrada y el buttom*/
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+
+    .form-group 
+    {
+        margin-bottom: 15px; /* Espacio entre los campos */
+    }
+
+    label 
+    {
+        display: block; /* Hace que el label ocupe toda la línea */
+        margin-bottom: 5px; /* Espacio entre el label y el campo */
+        font-weight: bold;
+    }
+
+    input[type="email"], textarea 
+    {
+        width: 100%; /* Hace que el input ocupe el 100% del ancho disponible */
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    button 
+    {
+        padding: 10px 20px;
+        background-color: #4CAF50; /* Un color verde para el botón */
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover 
+    {
+        background-color: #45a049; /* Color al pasar el ratón sobre el botón */
+    }
+</style>
+<header class="banner-container">
+    <img src="diego/image/logovisitsyde.png" alt="logovisitsyde" class="logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Sobre Nosotros</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="gallery.html">Galería</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="lineaSeparadora"> </div>
+
+<main>
+    <section class="Centrar">
+        <h2>Servicios que ofrecemos</h2>
+        <ul id="EliminaPuntos">
+            <li>
+                <h3>Consultoría de Viaje</h3>
+                <p>Recomendaciones personalizadas para tu viaje ideal según tus gustos y preferencias.</p>
+                <p><strong>Precio:</strong> 35$</p>
+            </li>
+            <li>
+                <h3>Guías de Destinos</h3>
+                <p>Accede a guías detalladas de los mejores lugares del mundo.</p>
+                <p><strong>Precio:</strong> Servivio gratuito</p>
+            </li>
+            <li>
+                <h3>Organización de Viajes</h3>
+                <p>Nos encargamos de todos los detalles de tu próximo viaje.</p>
+                <p><strong>Precio:</strong> 200$</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="Centrar">
+        <h2>Formulario de Contacto</h2>
+        <form action="#" method="post">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 VisitSide. Todos los derechos reservados.</p>
+    <nav>
+        <ul>
+            <li><a href="contact.html">Contacto</a></li>
+            <li><a href="privacy.html">Política de Privacidad</a></li>
+            <li><a href="terms.html">Términos de Uso</a></li>
+        </ul>
+    </nav>
+</footer>

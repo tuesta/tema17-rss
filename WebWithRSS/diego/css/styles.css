@@ -1,0 +1,156 @@
+.diego .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Colocar el logo a la izquierda y la barra de navegación a la derecha */
+.diego .banner-container
+{
+    display: flex; /* Usamos Flexbox para organizar los elementos dentro del contenedor */
+    align-items: center; /* Centra verticalmente el logo y la navegación */
+    justify-content: space-between; /* Espacia el logo y la navegación para que estén en extremos opuestos */
+    padding: 2rem 4rem; /* Añade espacio interno a la izquierda y derecha, y muy poco arriba y abajo */
+    border-bottom: 2px solid #0d0e0d;
+}
+
+.diego .logo
+{
+    height: 120px; /* Ajusta el tamaño del logo */
+}
+
+/* Banner */
+.diego .banner img
+{
+    width: 100%; /* Hace que la imagen del banner ocupe todo el ancho de la pantalla */
+    display: block; /* Elimina espacios debajo de la imagen */
+    max-height: 1000px; /*Limita la imagen por si fuera demasiado alta*/
+}
+
+.diego .imagesize /*Se usa un . delante porque es una clase */
+{
+    width: 500px; /*Ancho*/
+    height: 200px; /*altura*/
+    object-fit: cover; /*Para que la imagen se adapte*/
+}
+
+.diego .cuerpo
+{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.diego .Centrar
+{
+    width: 80%;           /* Ancho de la sección */
+    margin: 0 auto;       /* Centra la sección */
+    text-align: center;   /* Centra el texto dentro de la sección */
+}
+
+.diego #EliminaPuntos {
+    list-style-type: none;    /* Elimina los puntos */
+    padding-left: 0;          /* Elimina el padding izquierdo */
+    margin: 0 auto;           /* Centra el ul dentro de su contenedor */
+    text-align: center;       /* Centra los elementos <li> dentro del ul */
+}
+
+/* Opcional: Asegura que cada <li> esté centrado */
+.diego #EliminaPuntos li {
+    margin-bottom: 10px;      /* Espacio entre elementos de la lista */
+}
+
+.diego nav ul
+{
+    list-style-type: none; /*Elimina los puntos de la lista*/
+    margin: 0;/*eLIMINA LOS MARGENES POR DEFECTO DEL UL*/
+    padding: 0;/*Elimina el padding por defecto del ul*/
+    display: flex;/*Ordena los elementos de forma horizontal*/
+    gap: 30px;
+}
+
+.diego nav li
+{
+    margin: 0px; /* Margen entre los elementos de la lista */
+}
+
+.diego nav a
+{
+    color: #40c0bc;
+    text-decoration: none; /*Elimina el subrayado de los enlaces*/
+    font-size: 24px; /* Tamaño de la fuente */
+    padding: 5px; /* Espacio al rededor del texto de los enlaces */
+}
+
+.diego nav a:hover
+{
+    background-color: #ddd; /*Cambia el color al pasar el raton por encima*/
+}
+
+
+.diego .template {
+    display: flex;/*Le dice a sus hijos que ajuste el tamaño al contenedor*/
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;/*Para que el scroll solo afecte a la parte del texto*/
+}
+
+.diego .content {
+    flex-grow: 1;
+    padding: 16px;
+    display: flex;
+    gap: 16px;
+    flex-direction: file;
+    overflow-y: scroll;
+    display: flex;
+    align-items: flex-start;
+}
+
+.diego .content h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.diego .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.diego .table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);;
+}
+
+.diego .table thead tr {
+    background-color: #9edfd6;
+    color: #ffffff;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.diego .table th {
+    text-align: center;
+}
+
+.diego .table td{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.diego .tamañocolumna{
+    width: 150px;
+}
+
+/*Parrafos(no hay que poner .parrafos para que se aplique directamente a todos los parrafos*/
+.diego p {
+    margin-bottom: 20px;  
+}
