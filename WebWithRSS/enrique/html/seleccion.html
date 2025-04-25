@@ -1,0 +1,32 @@
+<div class="fondo2">
+    <nav class="menu2">
+        <!-- Estos son los botones que nos dirigen a otras secciones de la página -->
+        <a href="html/Guia_de_mobs.html"><button class="boton3">Guía de Mobs</button></a>
+        <a href="html/Guia_de_pociones.html"><button class="boton3">Guía de Pociones</button></a>
+        <a href="html/Guia_supervivencia.html"><button class="boton3">Guía de Supervivencia</button></a>
+    </nav>
+    <nav class="boton_abajo2">
+        <a href="index.html"><button class="boton4">Volver al inicio</button></a>
+    </nav>
+    <nav class="boton_abajo3">
+        <!-- Con este botón pondremos música -->
+        <button id="musica" class="musica2">Iniciar música</button>
+        <audio id="audio" src="musica/index/hal3.ogg"></audio>
+        <!-- Aquí está un script que pondrá música -->
+        <script>
+            const musica = document.getElementById('musica');
+            const audio = document.getElementById('audio');
+    
+            musica.addEventListener('click', () => {
+                if (audio.paused) {
+                    audio.play();
+                    musica.textContent = "Parar música";
+                } else {
+                    audio.pause();
+                    musica.textContent = "Iniciar música";
+                }
+            });
+        </script>
+        <a href="https://classic.minecraft.net/" target="_blank"><button class="boton5">Prueba Minecraft Classic</button></a>
+    </nav>
+</div>

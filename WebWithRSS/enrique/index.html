@@ -1,0 +1,30 @@
+<div class="fondo">
+    <!-- Con esto podremos navegar entre páginas -->
+    <nav class="menu">
+        <a href="html/Seleccion.html"><button class="boton">Inicio</button></a>
+        <a href="html/Registrarse.html"><button class="boton">Registrarse</button></a>
+        <a href="https://es.wikipedia.org/wiki/Markus_Persson" target="_blank"><button class="boton">Información del creador de minecraft</button></a>
+        <div class="boton_abajo">
+            <!-- Con este botón pondremos música -->
+            <button id="musica" class="musica">Iniciar música</button>
+            <audio id="audio" src="enrique/musica/index/hal3.ogg"></audio>
+            <!-- Aquí está un script que pondrá música -->
+            <script>
+                const musica = document.getElementById('musica');
+                const audio = document.getElementById('audio');
+        
+                musica.addEventListener('click', () => {
+                    if (audio.paused) {
+                        audio.play();
+                        musica.textContent = "Parar música";
+                    } else {
+                        audio.pause();
+                        musica.textContent = "Iniciar música";
+                    }
+                });
+            </script>
+            <!-- Este botón redige a la página oficial -->
+            <a href="https://www.minecraft.net/es-es" target="_blank"><button class="boton2">Página oficial de Minecraft</button></a>
+        </div>
+    </nav>
+</div>

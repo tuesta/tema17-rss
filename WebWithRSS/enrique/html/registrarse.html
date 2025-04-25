@@ -1,0 +1,39 @@
+<div class="fondo3">
+    <form action="/submit" method="POST">
+
+        <p>
+        <!-- label se utiliza para asociar una etiqueta descriptiva con un elemento de formulario -->
+        <label for="name">Nombre Completo:</label>
+        <!-- Con esto podremos navegar entre páginas. Con el required placeholder saldrá un texto en el cuadro donde hay que escribir-->
+        <input type="text" name="name" required placeholder="Ingresa tu nombre">
+    </p>
+
+    <p>
+        <label for="email">Correo Electrónico:</label>
+        <!-- Con el tipo email, es obligatorio poner un @ -->
+        <input type="email" name="email" required placeholder="ejemplo@correo.com">
+    </p>
+
+    <p>
+        <label for="birthdate">Fecha de Nacimiento:</label>
+        <!-- Con el tipo fecha, solo se puede poner una fecha -->
+        <input type="date" name="birthdate" required>
+    </p>
+    <p>
+        <label for="age">Edad:</label>
+        <!-- Al poner min y max, solo podras escribir entre 18 y 99 -->
+        <input type="number" name="age" required min="18" max="99" placeholder="Ingresa tu edad">
+    </p>
+    <p>
+        <label for="password">Contraseña:</label>
+        <!-- Al poner el tipo contraseña, solo saldrán puntos al escribir -->
+        <input type="password" name="Contraseña" placeholder="Mínimo 8 caracteres">
+    </p>
+    <p>
+        <label for="favorite-color">Color Favorito:</label>
+        <input type="color" name="favorite_color" value="#000000">
+    </p>
+        <button type="submit" class="boton4">Enviar</button>
+    </form>
+    <a href="index.html"><button class="boton4">Volver al inicio</button></a>
+</div>

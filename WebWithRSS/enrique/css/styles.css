@@ -1,0 +1,270 @@
+.enrique {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.enrique .body2 {
+  margin: 0;
+  display: block;
+    min-height: 100vh;
+    overflow: scroll;
+}
+.enrique .fondo {
+    background-image: url(../image/index/Portada_de_inicio.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.enrique .menu {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.enrique .boton{
+  cursor: pointer;
+  width: 598px;
+  height: 55px;
+  background-color: darkgray;
+  border: 1px solid black;
+  font-family: "Minecraft", sans-serif;
+  src: url('fonts/minecraft_font.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal; 
+}
+.enrique .boton:hover {
+  background-color: rgb(0, 160, 253);
+  color: yellow;
+  animation: palpitar 1s infinite;
+}
+@keyframes palpitar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.enrique .boton2{
+  width: 295px;
+  height: 55px;
+  background-color: darkgray;
+  border: 1px solid black;
+  font-family: "Minecraft", sans-serif;
+  src: url('fonts/minecraft_font.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal; 
+}
+.enrique .boton2:hover {
+  background-color: rgb(0, 160, 253);
+  color: yellow;
+  animation: palpitar 1s infinite;
+}
+.enrique .musica{
+  width: 295px;
+  height: 55px;
+  background-color: darkgray;
+  border: 1px solid black;
+  font-family: "Minecraft", sans-serif;
+  src: url('fonts/minecraft_font.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal; 
+}
+.enrique .musica:hover {
+  background-color: rgb(0, 160, 253);
+  color: yellow;
+  animation: palpitar 1s infinite;
+}
+.enrique .musica2{
+  width: 295px;
+  height: 38px;
+  color: rgb(255, 255, 255);
+  background-color: darkgray;
+  border: 1px solid black;
+  font-family: "Minecraft", sans-serif;
+  src: url('fonts/minecraft_font.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal; 
+}
+.enrique .musica2:hover {
+  background-color: rgb(0, 160, 253);
+  color: yellow;
+  animation: palpitar 1s infinite;
+}
+.enrique .boton_abajo {
+  display: flex;
+  gap: 0.5rem;
+}
+.enrique .menu2 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.enrique .fondo2 {
+  background-image: url(../image/index/Pantalla_de_mundos.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-repeat: space repeat;
+}
+.enrique .boton3 {
+  width: 598px;
+  height: 55px;
+  background-color: darkgray;
+  border: 1px solid black;
+  color: rgb(255, 255, 255);
+  font-family: "Minecraft", sans-serif;
+  src: url('fonts/minecraft_font.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal; 
+}
+.enrique .boton3:hover {
+  background-color: rgb(0, 160, 253);
+  color: yellow;
+  animation: palpitar 1s infinite;
+}
+.enrique .boton4 {
+  width: 155px;
+  height: 35px;
+  background-color: darkgray;
+  border: 1px solid black;
+  color: rgb(255, 255, 255);
+  font-family: "Minecraft", sans-serif;
+  src: url('fonts/minecraft_font.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal; 
+}
+.enrique .boton4:hover {
+  background-color: rgb(0, 160, 253);
+  color: yellow;
+  animation: palpitar 1s infinite;
+}
+.enrique .boton_abajo2 {
+  display: flex;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 62%;
+  transform: translateX(-51%);
+}
+.enrique .boton5 {
+  width: 297px;
+  height: 38px;
+  background-color: darkgray;
+  border: 1px solid black;
+  color: rgb(255, 255, 255);
+  font-family: "Minecraft", sans-serif;
+  src: url('fonts/minecraft_font.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal; 
+}
+.enrique .boton5:hover {
+  background-color: rgb(0, 160, 253);
+  color: yellow;
+  animation: palpitar 1s infinite;
+}
+.enrique .boton_abajo3 {
+  display: flex;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-49%);
+}
+.enrique .boton_abajo4 {
+  display: flex;
+  gap: 0.6rem;
+  position: fixed;
+  bottom: 0;
+  left: 90%;
+  transform: translateX(-50%);
+}
+.enrique .fondo3 {
+  background-image: url('../image/index/Fondo_guia_de_mobs.png');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: auto;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  color: rgb(255, 255, 255);
+  background-attachment: fixed;
+  font-family: "Minecraft", sans-serif;
+  src: url('fonts/minecraft_font.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal; 
+}
+
+.enrique .mob {
+    width: 20%;
+}
+.enrique .supervivencia {
+    width: 35%;
+}
+.enrique .mobs {
+    font-family: "Minecraft", sans-serif;
+    src: url('fonts/minecraft_font.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal; 
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+.enrique .mobs td, .mobs td {
+    border: 2px solid #ddd;
+    padding: 8px;
+  }
+  
+.enrique .mobs tr:nth-child(even){background-color: transparent;}
+  
+.enrique .mobs tr:hover {background-color: transparent;}
+  
+.enrique .mobs td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+  }
+.enrique .mobs img {
+    width: 100px;
+  }
+.enrique .fondo4 {
+    background-image: url('../image/index/Fondo_guia_de_mobs.png');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    background-attachment: fixed;
+    font-family: "Minecraft", sans-serif;
+    src: url('fonts/minecraft_font.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal; 
+    overflow: scroll;
+  }
+.enrique .supervivencia {
+    width: 35%;
+    text-align: center;
+}
