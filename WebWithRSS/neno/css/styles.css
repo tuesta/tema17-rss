@@ -1,0 +1,101 @@
+.neno body{
+    margin: 0;
+    background-image: url("../image/fondo.jfif");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.438);
+    background-repeat: no-repeat;
+    padding: 1rem;
+}
+.neno .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+
+    background-color: rgba(255, 255, 255, 0.4);
+
+}
+.neno .contenedor_hijo{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%; 
+      
+}
+.neno .dropdown{
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.neno .dropdown button{
+    background-color: hsl(0, 0%, 80%);
+    color: white;
+    padding: 10px 15px;
+    border:none;
+    cursor:pointer;
+    margin:0;
+    
+}
+.neno .dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.neno .dropdown .content{
+    display:none;
+    position:absolute;
+    top: 100%;
+    right: 0;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8);
+    margin-top: 0;
+}
+
+.neno .dropdown:hover .content{
+    display: block;
+}
+.neno .dropdown:hover button{
+    background-color: hsl(0, 0%, 70%);
+}
+.neno .dropdown a:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+
+.neno table {
+    background-color: rgba(255, 255, 255, 0.438);}
+
+.neno .luffy{
+    background-color: rgba(255, 255, 255, 0.336);   
+    margin: 0;
+}
+
+/* Estilo para la tabla, asegurando que ocupe el 50% del ancho del contenedor */
+.neno table {
+  width: 50%;
+  border-collapse: collapse; /* Combina bordes adyacentes para un look más limpio */
+  margin: 20px auto; /* Centra la tabla horizontalmente */
+}
+/* Aplica un borde a la tabla, las celdas de encabezado y las celdas de datos */
+.neno table, .neno th, .neno td {
+  border: 1px solid black;
+}
+/* Agrega padding y centra el contenido de las celdas de encabezado y datos */
+.neno th, .neno td {
+  padding: 10px;
+  text-align: center;
+}
+/* Fondo gris claro para las celdas de encabezado */
+.neno th {
+  background-color: #f2f2f2;
+}
