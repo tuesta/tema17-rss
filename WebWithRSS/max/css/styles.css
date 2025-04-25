@@ -1,0 +1,434 @@
+:root /*Es el padre de todo, y lo demás son variables --, como es el padre de todo calquier hijo puede acceder a las variables */
+{
+  --text-primary: rgb(255, 255, 255); 
+  --text-secondary: rgb(0, 0, 0);
+  --accent-bg-transparent: rgba(239, 255, 11, 0.5);
+  --text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  --accent-bg: rgb(214, 211, 31);
+  --altern-bg: #333;
+
+  --font-accent: "Jacquard 24", system-ui;
+}
+
+.max /*Etiqueta body*/
+{
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.max .layout /*Clase para todos menos index*/
+{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    color: var(--text-primary);
+    text-shadow: var(--text-shadow);
+    font-family: var(--font-accent);
+    font-size: 1.4rem;
+}
+
+
+.max .footer /*Pie de pagina general*/
+{
+    background: var(--altern-bg);/*Uso de variable var( )*/
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.max .menu
+{
+    background: var(--altern-bg);
+    padding: 1rem 0;
+}
+
+.max .menu_list
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.max .menu_list li /*item de la lista*/
+{
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    transition: background 0.5s ease;/*Transición antes del hover*/
+}
+
+.max .menu_list li:hover
+{
+    background: #acacac; /*cambio de color hover*/
+}
+
+.max .menu_list a
+{
+    text-decoration: none;/*evita cualquier decoración como subarrayado y eso*/
+    color: var(--text-primary);/*uso de variable*/
+    text-shadow: var(--text-shadow);
+}
+
+.max .title /*Ajustes de texto para el titulo*/
+{
+    font-weight: 400;
+    font-size: 5rem;
+    color: var(--text-secondary);
+    text-shadow: var(--text-shadow);
+    white-space: nowrap;/*Evita la rotura del titulo*/
+}
+
+.max .title-background /*Para ponerle un fondo solo para el título*/
+{
+    background-color: var(--altern-bg);
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.max .container-title /*Contiene el titulo y el contenido de la página*/
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+/* -------------------------------------------------- */
+/* Index styles */
+/* -------------------------------------------------- */
+.max .index
+{
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Indexbackground_1.jpg'); /* ruta que llama a una imagen para ser el fondo  */
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.max .index_container
+{
+    text-align: center;
+    background-color: var(--accent-bg-transparent);
+    padding: 2.5rem;
+    border-radius: 2rem;
+    font-family: var(--font-accent);
+
+    text-transform: capitalize;/*Convierte el texto a mayuscula*/
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.max .index_title
+{
+    font-weight: 400;
+    font-size: 5rem;
+    color: var(--text-secondary);
+    text-shadow: var(--text-shadow);
+}
+
+.max .index_subtitle
+{
+    font-weight: 200;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+}
+
+
+.max .index_container_menu_list
+{
+    display: flex;
+    flex-direction: column;/*Se flexible en columnas*/
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.max .index_container_menu_list_item
+{
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    text-shadow: var(--text-shadow);
+    background-color: var(--accent-bg);
+    padding: 1rem 3rem;
+    display: block;
+    border-radius: 0.75rem;
+    transition: background 0.5s linear;/*Transición*/
+    ;
+}
+
+.max .index_container_menu_list_item:hover /*el hover para el index*/
+{
+    background-color: rgba(180, 177, 0, 0.781);
+}
+
+/* -------------------------------------------------- */
+/* Help styles */
+/* -------------------------------------------------- */
+
+.max .help
+{
+    flex-grow: 1;
+    background-image: url('../media/fondo_ayuda.gif');/* ruta que llama a una gif para ser el fondo  */
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+}
+
+.max .help_content
+{
+    display: flex;
+    justify-content: end;
+}
+
+.max .help_content_form
+{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;/*Separación entre los elementos del formulario*/
+    font-size: 1.75rem;
+}
+
+.max .help_content_form_field
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.max .help_content_form_field-buttons
+{
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.max .form-button
+{
+    background: var(--altern-bg);
+    border-style: none;
+    padding: 1rem 3rem;
+    border-radius: 0.75rem;
+    font-size: 1.5rem;
+    font-family: var(--font-family);
+    color: var(--text-primary)
+}
+
+.max .form-button-accent
+{
+    background: var(--accent-bg);
+    color: var(--text-secondary)
+}
+
+.max .form-input
+{
+    width: 20rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-style: none;
+    background: var(--altern-bg);/*llamada en la variable*/
+    color: var(--text-color)
+}
+
+.max .form-checkbox
+{
+    width: 1.5rem;
+}
+
+/* -------------------------------------------------- */
+/* Puntos */
+/* -------------------------------------------------- */
+.max .keypoints
+{
+    background: radial-gradient(ellipse, #c79200, #000000);
+    flex-grow: 1;
+    display: flex;
+    overflow: scroll;
+}
+
+.max .keypoints_content
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.max .keypoints_content_square
+{
+    width: 100%;
+    min-height: 20px; /* TODO MAX despues de poner el contenido, elimina esta linea*/
+}
+
+.max .keypoints_content_square:nth-child(odd)
+{
+    background: rgb(109, 109, 109); /* TODO MAX despues de poner el contenido, elimina esta linea*/
+}
+.max .keypoints_content_square:nth-child(even)
+{
+    background: rgb(0, 0, 0); /* TODO MAX despues de poner el contenido, elimina esta linea*/
+}
+
+/* If screen size is more than 600px wide, set the font-size of <div> to 80px */
+@media screen and (min-width: 800px) 
+{
+  .keypoints_content_square 
+  {
+    width: 75%;
+  }
+
+  .keypoints_content_square:nth-child(even) 
+  {
+    margin-left: 25%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .keypoints_content_square 
+  {
+    width: 60%;
+  }
+
+  .keypoints_content_square:nth-child(even) 
+  {
+    margin-left: 40%;
+  }
+}
+
+/* -------------------------------------------------- */
+/* Recomendations styles */
+/* -------------------------------------------------- */
+.max .recomendations
+{
+    background-image: url(../images/Indexbackground_3.jpg);
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+    overflow: hidden;
+    display: flex;
+}
+
+.max .recomendations-content
+{
+    display: flex;
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+/* -------------------------------------------------- */
+/* Factions styles */
+/* -------------------------------------------------- */
+.max .factions
+{
+    background: linear-gradient(#ffd000, #000000);
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.max .factions_content
+{
+    display: flex;
+    overflow: scroll;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+}
+
+.max .factions_table
+{
+    display: block;
+    margin-bottom: 5rem;
+    box-sizing: border-box;
+}
+
+/* Parte tabla mix*/
+table 
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td 
+{
+    border: 3px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th 
+{
+    background-color: #333;
+    color: rgb(165, 140, 0);
+}
+
+td
+{
+    color: black;/*letras negras*/
+}
+tr:nth-child(odd) td 
+{
+    background-color: rgb(255, 255, 255);
+}
+tr:nth-child(even) td 
+{
+    background-color: rgb(158, 158, 158);
+}
+
+
+/* -------------------------------------------------- */
+/* Acordeon */
+/* -------------------------------------------------- */
+
+.max .accordion
+{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--text-primary);
+    text-shadow: var(--text-shadow);
+    width: 100%;
+    
+}
+.max .accordion article
+{
+    background-color: var(--altern-bg);
+}
+.max .accordion input[type="radio"]
+{
+    display: none;
+}
+.max .accordion input[type="radio"] ~ div
+{
+    max-height: 0;/*Para que no tenga tamaño*/
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.max .accordion input[type="radio"]:checked ~ div
+{
+    max-height: 1000rem;
+}
+.max .accordion label
+{
+    display: block;
+    padding: 1rem 2rem;
+}
+.max .accordion .content
+{
+    padding: 1rem;
+}
