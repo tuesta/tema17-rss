@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mi canal de RSS - donde actualizo las PCs</title>
+    <link>https://deft-bubblegum-f650ba.netlify.app</link>
+    <description>En este RSS te informaras sobre como voy actualizando las PCs</description>
+    <copyright>2025 Tuesta. All rights reserved.</copyright>
+    <pubDate>Fri, 25 Apr 2025 00:00:00 EST</pubDate>
+    <atom:link href="https://deft-bubblegum-f650ba.netlify.app/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Computadora de Neno</title>
+      <author>newno@gmail.com (neno)</author>
+      <link>https://deft-bubblegum-f650ba.netlify.app</link>
+      <description>En esta PCs podras encontrar información sobre One Piece
+      <![CDATA[ <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/a249096c7812deb8c3c2c907173f3774.jpg" alt="InfoHammer" width="200" height="150">]]>
+      </description>
+      <guid>https://deft-bubblegum-f650ba.netlify.app/neno</guid>
+    </item>
+    <item>
+      <title>Computadora de Enrique</title>
+      <author>enrique@gmail.com (enrique)</author>
+      <link>https://deft-bubblegum-f650ba.netlify.app</link>
+      <description>En esta PCs podras encontrar información sobre Minecraft
+      <![CDATA[ <img src="https://noticias.upc.edu.pe/wp-content/uploads/2019/05/minecraft.jpg" alt="InfoHammer" width="200" height="150">]]>
+      </description>
+      <guid>https://deft-bubblegum-f650ba.netlify.app/enrique</guid>
+    </item>
+    <item>
+      <title>Computadora de Diego</title>
+      <author>diego@gmail.com (diego)</author>
+      <link>https://deft-bubblegum-f650ba.netlify.app</link>
+      <description>En esta PCs podras encontrar información sobre viajes
+      <![CDATA[ <img src="https://www.lavanguardia.com/files/og_thumbnail/uploads/2018/06/15/5fa43d71a111f.jpeg" alt="viajes" width="200" height="150">]]>
+      </description>
+      <guid>https://deft-bubblegum-f650ba.netlify.app/diego</guid>
+    </item>
+    <item>
+      <title>Computadora de Max</title>
+      <author>max@gmail.com (max)</author>
+      <link>https://deft-bubblegum-f650ba.netlify.app</link>
+      <description>En esta PCs podras encontrar información sobre War Hammer
+      <![CDATA[ <img src="https://cdn1.epicgames.com/offer/f640a0c1648147fea7e81565b45a3003/EGS_Warhammer40000SpaceMarine2_SaberInteractive_S1_2560x1440-975214651d1d1bc6c6e5779b53958840" alt="InfoHammer" width="200" height="150">]]>
+      </description>
+      <guid>https://deft-bubblegum-f650ba.netlify.app/max</guid>
+    </item>
+  </channel>
+</rss>
